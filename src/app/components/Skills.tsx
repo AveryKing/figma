@@ -138,7 +138,7 @@ export function Skills() {
               transition={{
                 duration: 3,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: [0.42, 0, 0.58, 1] as const
               }}
             />
             <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-3xl p-10 border border-white/20 hover:border-emerald-500/40 transition-all">
@@ -150,7 +150,7 @@ export function Skills() {
                   transition={{ 
                     duration: 2, 
                     repeat: Infinity,
-                    ease: "easeInOut"
+                    ease: [0.42, 0, 0.58, 1] as const
                   }}
                 >
                   <Zap className="w-8 h-8 text-yellow-400" />

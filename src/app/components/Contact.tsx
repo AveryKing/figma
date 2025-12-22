@@ -214,7 +214,7 @@ export function Contact() {
                   transition={{
                     duration: 3,
                     repeat: Infinity,
-                    ease: "easeInOut"
+                    ease: [0.42, 0, 0.58, 1] as const
                   }}
                 />
                 <div className="relative bg-gradient-to-br from-pink-600/20 via-orange-600/20 to-emerald-600/20 backdrop-blur-xl rounded-3xl p-8 border border-pink-500/30 hover:border-pink-500/50 transition-all">
