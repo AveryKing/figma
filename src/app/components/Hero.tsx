@@ -6,7 +6,7 @@ const floatingAnimation = {
   transition: {
     duration: 3,
     repeat: Infinity,
-    ease: "easeInOut"
+    ease: [0.42, 0, 0.58, 1] as const
   }
 };
 
@@ -23,7 +23,7 @@ export function Hero() {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: [0.42, 0, 0.58, 1] as const
           }}
           className="absolute top-1/4 -left-48 w-96 h-96 bg-emerald-500/30 rounded-full blur-[120px]" 
         />
@@ -35,7 +35,7 @@ export function Hero() {
           transition={{
             duration: 10,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: [0.42, 0, 0.58, 1] as const,
             delay: 1
           }}
           className="absolute top-1/3 right-0 w-96 h-96 bg-cyan-500/30 rounded-full blur-[120px]" 
@@ -48,7 +48,7 @@ export function Hero() {
           transition={{
             duration: 12,
             repeat: Infinity,
-            ease: "easeInOut",
+            ease: [0.42, 0, 0.58, 1] as const,
             delay: 2
           }}
           className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-pink-500/20 rounded-full blur-[120px]" 
@@ -70,7 +70,7 @@ export function Hero() {
               transition: {
                 duration: 4,
                 repeat: Infinity,
-                ease: "easeInOut",
+                ease: [0.42, 0, 0.58, 1] as const,
                 delay: 0.5
               }
             }}
@@ -84,7 +84,7 @@ export function Hero() {
               transition: {
                 duration: 5,
                 repeat: Infinity,
-                ease: "easeInOut",
+                ease: [0.42, 0, 0.58, 1] as const,
                 delay: 1
               }
             }}
@@ -107,7 +107,7 @@ export function Hero() {
             transition={{
               duration: 2,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: [0.42, 0, 0.58, 1] as const
             }}
           >
             <span className="px-6 py-3 bg-gradient-to-r from-emerald-500/10 via-cyan-500/10 to-pink-500/10 backdrop-blur-sm border border-emerald-500/30 rounded-full text-emerald-400 text-sm font-semibold shadow-lg shadow-emerald-500/20">
@@ -231,7 +231,7 @@ export function Hero() {
             transition={{
               duration: 2,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: [0.42, 0, 0.58, 1] as const
             }}
           >
             <ChevronDown className="w-8 h-8 text-emerald-400" />

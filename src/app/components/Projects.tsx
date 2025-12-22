@@ -105,7 +105,7 @@ export function Projects() {
                               transition={{ 
                                 duration: 2, 
                                 repeat: Infinity,
-                                ease: "easeInOut"
+                                ease: [0.42, 0, 0.58, 1] as const
                               }}
                             >
                               <Zap className="w-8 h-8 text-yellow-400" />
